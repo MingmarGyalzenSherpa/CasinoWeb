@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    
+    color:#010304;
+    font-size: 17px;
+    line-height: 1.53;
+    font:17px/1.53 'Roboto', sans-serif;
+}
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.banner-part{
+    height: 100vh;
+    position: relative;
+    background: url('./images/banner-img.png') no-repeat center /cover;
+}
+
+.bg-stretch{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
