@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    
 }
 body{
     margin:0;
@@ -13,10 +14,33 @@ body{
 font-family: 'Roboto', sans-serif; */
 
 .banner-part{
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     background: url('./images/banner-img.png') no-repeat center /cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.banner-part::before{
+    content:'';
+    height:100vh;
+   
+}
+
+.banner-part::after {
+    content: '';
+    background-color: rgba(191,61,66,1);
+    mix-blend-mode: darken;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    
+}
+
+
 
 .bg-stretch{
     position:absolute;
@@ -27,4 +51,70 @@ font-family: 'Roboto', sans-serif; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/* text inside banner part */
+.banner-content{
+    max-width:976px;
+    color:white;
+    position:relative;
+    z-index:9;
+    text-align: center;
+}
+
+.banner-content p{
+    margin:0;
+}
+
+.overline-text{
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 65px;
+    margin:0 0 45px;
+    text-transform: uppercase;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn.primary{
+    
+    padding:15px;
+    background-color: #333;
+    border: 2px solid white;
+    color:white;
+    min-width:230px;
+    border-radius: 30px;
+}
+
+#header{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:999;
+    padding: 15px 50px;
+}
+
+#header .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    order: 0;
+}
+
+.logo a{
+    display: inline-block;
 }
