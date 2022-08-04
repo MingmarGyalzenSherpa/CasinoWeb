@@ -83,6 +83,8 @@ h1{
     color: #000;
     text-decoration: none;
     display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
 
 .btn.primary{
@@ -93,6 +95,16 @@ h1{
     color:white;
     min-width:230px;
     border-radius: 30px;
+}
+
+.btn.secondary{
+    padding:15px;
+    background-color: rgb(191,61,66);
+    border: 2px solid white;
+    color:white;
+    min-width:180px;
+    border-radius: 30px;
+    
 }
 
 #header{
@@ -117,4 +129,72 @@ h1{
 
 .logo a{
     display: inline-block;
+}
+
+/* about casino */
+
+.container{
+    max-width:1170px;
+    width:100%;
+    margin: 0 auto;
+}
+
+.about-part{
+    padding:120px 0;
+}
+
+h2{
+    font-size:35px;
+    line-height: 2;
+    font-weight: bold;
+    color:#010304;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+}
+
+.style{
+    position: relative;
+    padding-left:44px;
+}
+
+.style::after{
+    content:'';
+    width:42px;
+    height:42px;
+    position: absolute;
+    top:10px;
+    left:0;
+    background: url(./images/about-casino-logo.png) no-repeat center/cover;
+    display: block;
+}
+
+.two-columns{
+    display: flex;
+    flex-wrap:wrap;
+    margin:0 -20px;
+}
+
+.two-columns .col{
+    width:50%;
+    padding: 0 20px;
+}
+
+.about-part .image-wrap{
+    position: relative;
+    /* dont use height and width  */
+    /* width:500px;
+    height:345px; */
+    padding-top:61%; /* 345(height)/500(width) = 0.69 and then fix 
+    padding top to make height 345 px*/
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.about-part p{
+    margin:0;
+}
+
+.about-part .btn-wrap{
+    margin-top:60px;
 }
